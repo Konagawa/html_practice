@@ -59,6 +59,9 @@ article ul {
 }
 
 /* 「施設のご案内」ページ ここまで↑ */
+
+
+
 /* 「料金プラン」ページ ここから↓ */
 table {
 	border-collapse: collapse;
@@ -72,5 +75,11 @@ table tr td {
 /* 「料金プラン」ページ ここまで↑ */
 
 /* 「ご意見・ご要望」ページ ここから↓ */
+textarea {
+	resize: none;
+	width: 500px;
+	height: 200px;
+}
+
 
 /* 「ご意見・ご要望」ページ ここまで↑ */
