@@ -11,27 +11,36 @@
 	<h1><a href="index.html"><img src="images/logo.png" width="203" height="70" alt="ハピネスフィットネスクラブ"></a></h1>
 	<div id="nav">
 		<ul>
-			<li><a href="info.html"><img src="images/nav1.png" width="173" height="50" alt="施設のご案内"></a></li>
-			<li><a href="fee.html"><img src="images/nav2.png" width="173" height="50" alt="料金プラン"></a></li>
-			<li><a href="opinion.html"><img src="images/nav3.png" width="173" height="50" alt="ご意見・ご要望"></a></li>
+			<li class="button03"><a href="info.html">施設のご案内</a></li>
+			<li class="button03"><a href="fee.html">料金プラン</a></li>
+			<li class="button03"><a href="opinion.html">ご意見・ご要望</a></li>
 		</ul>
 	</div>
 </div>
 <div id="contents">
 	<div id="main">
 		<article>
-			<h1>ご意見・ご要望</h1>
-			<p>サービス改善のため、皆様のお声をお聞かせください。<br>会員の方はもちろん、ご入会を検討されている方のご意見・ご要望もお待ちしております。</p>
-			<form action="#">
-				<p>
-					<label>お名前<br><input type="text" name="name" class="textfield"></label>
-				</p>
-				<p>
-				    <label>ご意見・ご要望<br><textarea name="comment"></textarea></label>
-				</p>
-				<p>
-					<input type="submit" value="確認する">
-				</p>
+			<form>
+			<div class="Form">
+				<div class="Form-Item">
+				  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+				  <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+				</div>
+				<div class="Form-Item">
+				  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+				  <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+				</div>
+				<div class="Form-Item">
+				  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+				  <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+				</div>
+				<div class="Form-Item">
+				  <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+				  <textarea class="Form-Item-Textarea"></textarea>
+				</div>
+				<input type="submit" class="Form-Btn" value="送信する"><a href="#"></a>
+			  </div>
+			  </form>
 		</article>
 	</div>
 	<div id="sub">

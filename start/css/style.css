@@ -46,8 +46,8 @@ footer small {
 
 /* 「施設のご案内」ページ ここから↓ */
 img.float_right {
-	margin: 0 20px 20px 0;
-	float: left;
+	margin: 0 0 20px 20px;
+	float: right;
 }
 
 .float_clear {
@@ -63,15 +63,7 @@ article ul {
 
 
 /* 「料金プラン」ページ ここから↓ */
-table {
-	border-collapse: collapse;
-}
-table th  {
-	background-image: url(../images/bg_footer.png);
-}
-table tr td {
-	border: solid 1px rgb(180, 201, 194);
-}
+
 /* 「料金プラン」ページ ここまで↑ */
 
 /* 「ご意見・ご要望」ページ ここから↓ */
@@ -81,5 +73,303 @@ textarea {
 	height: 200px;
 }
 
+.button03 a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 1em 2em;
+	width: 100px;
+	color: #2285b1;
+	font-size: 13px;
+	font-weight: 700;
+	border: 2px solid #2285b1;
+	background-color: white;
+}
+
+.button03 a::after {
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-top: 3px solid #2285b1;
+	border-right: 3px solid #2285b1;
+	transform: rotate(45deg);
+}
+
+.button03 a:hover {
+	color: #333333;
+	text-decoration: none;
+	background-color: #a0c4d3;
+}
+
+.button03 a:hover::after {
+	border-top: 3px solid #333333;
+	border-right: 3px solid #333333;
+}
+
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_iptxt input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_iptxt input[type=text] {
+	padding-left: 40px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_iptxt input[type=text]:focus + i {
+	color: #da3c41;
+}
 
 /* 「ご意見・ご要望」ページ ここまで↑ */
+
+
+
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	width: 490px;
+}
+
+table tr:last-child{
+	border-bottom:solid 1px #ddd;
+}
+
+table th{
+	text-align: center;
+	padding: 10px 0;
+	border-right:solid 1px #ddd;
+	border-left:solid 1px #ddd;
+	width: 155px;
+}
+
+table th:nth-child(1){
+	background-color:#dddddd;
+}
+
+table th:nth-child(3){
+	background-color:#f5b932;
+	color: white;
+}
+
+table tr:nth-child(2) td{
+	font-size: 30px;
+}
+
+table td{
+	text-align: center;
+	padding: 7px 0;
+	border-right:solid 1px #ddd;
+	border-left:solid 1px #ddd;
+	width: 155px;
+}
+
+table td a{
+	background-color: #25b327;
+	color: white;
+	padding:5px 20px;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+table .popular{
+	width: 180px;
+}
+
+table th.popular{
+	position: relative;
+}
+
+table th.popular span.no1{
+	position: absolute;
+	top: -10px;
+	left:calc(50% - 30px);
+	background: #bdcc28;
+	width: 60px;
+	font-size: 10px;
+	border-radius: 15px;
+	line-height: 1;
+	padding: 5px;
+}
+
+table th.popular span.inner{
+	position: absolute;
+	color:white;
+	background-color: #f34955;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 180px;
+	padding: 10px 0;
+}
+
+
+
+/** form **/
+.Form {
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+}
+@media screen and (max-width: 480px) {
+	.Form {
+	margin-top: 40px;
+}
+}
+.Form-Item {
+	border-top: 1px solid #ddd;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 480px) {
+	.Form-Item {
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	flex-wrap: wrap;
+	}
+}
+.Form-Item:nth-child(5) {
+	border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+	width: 100%;
+	max-width: 248px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+	.Form-Item-Label {
+	max-width: inherit;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+    }
+}
+.Form-Item-Label.isMsg {
+	margin-top: 8px;
+	margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+	.Form-Item-Label.isMsg {
+	margin-top: 0;
+	}
+}
+.Form-Item-Label-Required {
+	border-radius: 6px;
+	margin-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 48px;
+	display: inline-block;
+	text-align: center;
+	background: #5bc8ac;
+	color: #fff;
+	font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+	.Form-Item-Label-Required {
+	border-radius: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	width: 32px;
+	font-size: 10px;
+	}
+}
+.Form-Item-Input {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 48px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	background: #eaedf2;
+	font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+	.Form-Item-Input {
+	margin-left: 0;
+	margin-top: 18px;
+	height: 40px;
+	flex: inherit;
+	font-size: 15px;
+	}
+}
+.Form-Item-Textarea {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 216px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	background: #eaedf2;
+	font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+	.Form-Item-Textarea {
+    margin-top: 18px;
+	margin-left: 0;
+	height: 200px;
+	flex: inherit;
+	font-size: 15px;
+	}
+}
+.Form-Btn {
+	border-radius: 6px;
+	margin-top: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 280px;
+	display: block;
+	letter-spacing: 0.05em;
+	background: #5bc8ac;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+	.Form-Btn {
+	margin-top: 24px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 160px;
+	font-size: 16px;
+	cursor: pointer;
+	}
+}
