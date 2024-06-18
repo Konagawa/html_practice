@@ -2,6 +2,13 @@
 
 /* 基本レイアウト ここから↓ */
 @import url(common.css);
+
+.wrap{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 100%;
+	min-height: 100vh;
+}
 #header {
 	width: 1000px;
 	height: 70px;
@@ -29,12 +36,21 @@
 	background-image: url(../images/bg_footer.png);
 	background-repeat: repeat-x;
 	text-align: center;
+	width: 100%;
 }
 
 footer small {
 	font-size: 12px;
+	position: absolute;
+	bottom: 0;
 }
-
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
 #main h1 {
 	background-image:url(../images/h1.png);
 	background-repeat: no-repeat;
@@ -102,7 +118,7 @@ textarea {
 	background-color: #a0c4d3;
 }
 
-.button03 a:hover::after {
+.button03 a:hover:after {
 	border-top: 3px solid #333333;
 	border-right: 3px solid #333333;
 }
@@ -362,6 +378,12 @@ table th.popular span.inner{
 	color: #fff;
 	font-weight: bold;
 	font-size: 20px;
+	cursor: pointer;
+}
+.Form-Btn:hover {
+	color: #333333;
+	text-decoration: none;
+	background-color: #a0c4d3;
 }
 @media screen and (max-width: 480px) {
 	.Form-Btn {
@@ -371,5 +393,10 @@ table th.popular span.inner{
 	width: 160px;
 	font-size: 16px;
 	cursor: pointer;
+	}
+	.Form-Btn:hover {
+		color: #322333;
+		text-decoration: none;
+		background-color: #a0c4d3;
 	}
 }
