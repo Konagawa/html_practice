@@ -161,7 +161,7 @@ textarea {
 
 
 
-
+.plan{
 table{
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -241,7 +241,7 @@ table th.popular span.inner{
 	padding: 10px 0;
 }
 
-
+}
 
 /** form **/
 .Form {
@@ -399,4 +399,18 @@ table th.popular span.inner{
 		text-decoration: none;
 		background-color: #a0c4d3;
 	}
+}
+
+.map{
+	table{
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		background-color: #eee
+	  }
+	  
+	  table th,table td{
+		padding: 10px 0;
+		text-align: center;
+	  }
 }
